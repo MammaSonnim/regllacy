@@ -1,0 +1,7 @@
+- var navExtraItem = ['Для поставщиков', 'О производстве', 'Наши документы', 'Экологические стандарты']
+
+mixin nav-extra(items)
+  nav.nav-extra
+    ul.nav-extra__list
+      each item in items
+        li.nav-extra__item: a.nav-extra__link(href="#") #{item}

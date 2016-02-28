@@ -1,0 +1,29 @@
+-var cartItems = ["Пломбир с апельсиновым джемом", "Клубничный пломбир с присыпкой из белого шоколада"]
+
+mixin cart(items)
+  .cart
+    .cart__btn
+      +btn-action("cart")
+    .cart__form
+      table.cart__items
+        each item in items       
+          tr.cart__item
+            td.cart__remove-item
+              button.cart__remove-icon Закрыть
+            td.cart__img-wrap
+              img.cart-img(src="#" alt="Фотография мороженого" width="33" height="33")
+            td.cart__descr #{item}
+            td.cart__price 1.5кг
+              span x
+                span.cart__price-num 300 
+                |руб.
+            td.cart__count 300 руб.
+          tr.cart__item
+            td.cart__total Итого: 750 руб.
+      .cart__btn
+      .btn.btn--narrow Оформить заказ
+          
+          
+            
+          
+            

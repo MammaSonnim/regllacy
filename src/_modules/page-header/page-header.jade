@@ -1,0 +1,21 @@
+mixin page-header
+
+  .page-header.row
+    .col-8
+      .page-header__nav
+        +logo
+        +page-nav(navItem)
+    .col-4    
+      .page-header__actions
+        .page-header__action
+          +search
+        .page-header__action
+          +login
+        .page-header__action
+          +cart(cartItems)
+      .page-header__schedule
+          +schedule
+          
+      
+        
+    

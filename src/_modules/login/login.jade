@@ -1,0 +1,13 @@
+mixin login
+  .login
+    .login__btn
+      +btn-action("login")
+    .login__wrap
+      form.login__form(action="/echo")
+        +field
+        .login__btn.row-6
+          .btn.btn--wide Войти
+        .login__links.row-6
+          a.link(href="#") Забыли пароль?
+          a.link(href="#") Новая регистрация
+      

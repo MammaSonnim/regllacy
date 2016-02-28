@@ -1,0 +1,7 @@
+-var socialMod = ["tw", "inst", "fb", "vk"]
+
+mixin social(items)
+  each item in items
+    a.social(class="social--" + item)
+      svg.social__img
+        use(xlink:href="#icon_social-" + item)

@@ -1,0 +1,15 @@
+- var navItem = ['Сливочное', 'Щербеты', 'Фруктовый лёд', 'Мелорин']
+
+mixin page-nav(items)
+  nav.page-nav
+    ul.page-nav__list
+      li.page-nav__item
+        a.page-nav__link(href="#") Каталог
+        ul.page-nav__sub-list        
+          li.page-nav__sub-item: a.page-nav__sub-title(href="#") Новинки
+          each item in items
+            li.page-nav__sub-item: a.page-nav__sub-link(href="#") #{item}
+      li.page-nav__item: a.page-nav__link(href="#") Доставка и оплата
+      li.page-nav__item: a.page-nav__link(href="#") О компании
+      
+  

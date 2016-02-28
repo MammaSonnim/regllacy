@@ -1,0 +1,28 @@
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #849d8f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+
+}
+
+@for $i from 1 through 12 {
+  .col#{$i} {
+    width: 100%/$i;
+  }
+}
